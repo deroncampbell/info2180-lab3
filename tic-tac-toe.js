@@ -20,6 +20,8 @@ function newGame() {
         square.classList.add('square');
         square.innerText = '';
 
+        square.onmouseover = function() { this.classList.add('hover'); };
+        square.onmouseout = function() { this.classList.remove('hover'); };
         square.addEventListener('click', clickHandler, { once: true });
     }
 }
