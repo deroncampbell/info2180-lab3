@@ -42,6 +42,7 @@ function clickHandler() {
 
     this.innerText = playerTurn;
     this.classList.add(playerTurn);
+    status.innerText = playMessage;
 
     if (getWinner()) {
         status.innerText = `Congratulations! ${playerTurn} is the Winner!`;
